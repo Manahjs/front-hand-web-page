@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLPL - To every direction</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="assets/img/IMG_LOGO (2).png" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+    <!-- i made change here  -->
+    <link rel="stylesheet" href="/./assets/effect_mlpl.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  --></head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <!-- <a href="#" class="logo">MLPL</a> -->
+          <img
+            src="data:image/png;base64,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"
+            src="../adv_mlpl/assets/img/download (1)_processed (1).jpeg"
+            alt="Description of the image"
+          />
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">Transportion</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="Clsoe menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>
+                <span>Home</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+                  <!-- i add here  -->
+                  <ul class="dropdown">
+                  <li class="dropdown-item"><a href="#mode1">Consumer goods</a></li> 
+                  <li class="dropdown-item"><a href="indexx.html">Retail</a></li> 
+                  <li class="dropdown-item"><a href="#mode1">Public Sector</a></li> 
+                  <li class="dropdown-item"><a href="about.html">Capital Market</a></li> 
+                  <li class="dropdown-item"><a href="#mode1">Banking</a></li> 
+                  <li class="dropdown-item"><a href="contact.html">Hospitality</a></li> 
+                  <li class="dropdown-item"><a href="https://www.thecompanycheck.com/company/mayureshwar-logistics-private-limited/U74999MH2017PTC291780">Bussiness process operation</a></li>
+                </ul>
+                  <!-- <script> document.querySelector('.navbar-link').addEventListener('click', function() { var dropdown = this.nextElementSibling; dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; }); </script>
+ -->
+
+
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>
+                <span>About</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+
+              <ul class="dropdown"> 
+                <li class="dropdown-item"><a href="https://www.companydetails.in/company/mayureshwar-logistics-private-limited">Leadership</a></li>
+                 <li class="dropdown-item"><a href="https://economictimes.indiatimes.com/company/mayureshwar-logistics-private-limited/U74999MH2017PTC291780">Newsroom</a></li>
+                 <li class="dropdown-item"><a href="https://www.indiafilings.com/search/mayureshwar-logistics-private-limited-cin-U74999MH2017PTC291780">privacy Trust center</li> 
+                
+                </ul>         
+                
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link" data-nav-link>
+                <span>Service</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+
+              <ul class="dropdown">
+                <li class="dropdown-item"><a href="#services1">Bulker</a></li>
+                <li class="dropdown-item"><a href="#services2">cointainer</a></li> 
+                <li class="dropdown-item"><a href="#services3">E-commerce partners</a></li> </ul>
+                
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-link>
+                <span>Foundation</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+              <ul class="dropdown"> 
+                <li class="dropdown-item"><a href="index_2.html">our reach</a></li> 
+                <li class="dropdown-item"><a href="#services2">Stories</a></li> 
+                <li class="dropdown-item"><a href="#services3">our initatives</a></li> 
+                <li class="dropdown-item"><a href="#services3">our Publication</a></li> 
+              </ul>
+            </li>
+            
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>
+                <span>Career</span>
+                <ion-icon name="chevron-forward"></ion-icon></a>
+                <ul class="dropdown"> 
+                  <li class="dropdown-item"><a href="career.html">thane</a></li> 
+                  <li class="dropdown-item"><a href="career.html">andheri</a></li> 
+                  <li class="dropdown-item"><a href="career.html">bhiwandi</a></li> 
+                   
+                </ul>
+                <!-- <ion-icon name="chevron-forward"></ion-icon> -->
+            </li>
+
+                
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>
+                <span>Contact</span>
+
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+              <ul class="dropdown"> 
+                <li class="dropdown-item"><a href="E.html">Employee</a></li> 
+                <li class="dropdown-item"><a href="#services2">twitter</a></li>
+                <li class="dropdown-item"><a href="https://chat.whatsapp.com/K345DULDJvm4So1zd8HXMr">whatsaap</a></li>
+                <li class="dropdown-item"><a href="#services2">instagram</a></li>
+                 <li class="dropdown-item"><a href="b.html">Message us</a></li>
+                 </ul>
+              <script> document.querySelectorAll('.navbar-link').forEach(function(navLink) { navLink.addEventListener('click', function(event) { event.preventDefault();
+              //Prevent the default link behavior 
+              var dropdown = this.nextElementSibling; 
+              // Hide all other dropdowns 
+              document.querySelectorAll('.dropdown').forEach(function(drop) { if (drop !== dropdown) { drop.style.display = 'none'; } }); 
+              // Toggle the current dropdown 
+              dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; }); }); </script>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-contact">
+          <div>
+            <p class="contact-label">Free Call In Thane</p>
+
+            <a href="tel:12345678910" class="contact-number">9337832682</a>
+          </div>
+
+          <div class="contact-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+        </div>
+
+        <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero"
+          aria-label="home"
+          id="home"
+          style="background-image: url('./assets/images/hero-banner.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h2 class="h1 hero-title">
+                <span class="span">To Every</span> Direction
+              </h2>
+
+              <p class="hero-text">
+                A little bit of magic goes a long way We’re here for you.
+              </p>
+
+              <a href="about.html" class="btn-outline">View Services</a>
+
+              <img
+                src="./assets/images/hero-shape.png"
+                width="116"
+                height="116"
+                loading="lazy"
+                class="hero-shape shape-1"
+              />
+
+              <img
+                src="./assets/images/hero-shape.png"
+                width="116"
+                height="116"
+                loading="lazy"
+                class="hero-shape shape-2"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <figure
+              class="about-banner img-holder"
+              style="--width: 400; --height: 720"
+            >
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="400"
+                height="720"
+                loading="lazy"
+                alt=""
+                class="img-cover"
+              />
+
+              <img
+                src="./assets/images/about-shape-1.png"
+                width="260"
+                height="170"
+                loading="lazy"
+                alt=""
+                class="abs-img abs-img-1"
+              />
+
+              <img
+                src="./assets/images/about-shape-2.png"
+                width="500"
+                height="500"
+                loading="lazy"
+                alt=""
+                class="abs-img abs-img-2"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle">Why Choose Us</p>
+
+              <h2 class="h2 section-title">
+                We Are Professional Logistics on all over India
+              </h2>
+
+              <p class="section-text">
+                Mayureshwar Logistics Private Limited is a 7 years 10 months old
+                Private Limited Company incorporated on 28-Feb-2017, having its
+                registered office located at 85 Mlpl House, Near Govt Ashram
+                Shala, Nimbavali, Yewai Rd, Village Bhinar, Bhiwandi Thane,
+                Maharashtra. The major activity of Mayureshwar Logistics Private
+                Limited is Services, Sub-classified into Land transport and
+                transport via pipelines and is primarily engaged in the
+                Motorised road freight transport. Mayureshwar Logistics Private
+                Limited is classified as Medium enterprise in the financial year
+                2023-24. It has its unit situated at Bhiwandi Thane,
+                Maharashtra.Our USP is Time bound Express delivery where the TAT
+                we provide to the Customer is among the best in the Industry. ✓
+                Our drivers are all well experienced, trained long distance
+                drivers that are fully aware of the service required to satisfy
+                our customers. Our vehicles our regularly serviced and strictly
+                maintained to set manufacturer maintenance schedule. ✓Dedicated
+                customer relation executive to provide undivided attention to
+                the customer’s needs and address their queries / issues.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    Go beyond logistics, make the world go round and
+                    revolutionize business.
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    Logistics through innovation, dedication, and technology.
+                    ready, set, done.
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    We take pride in serving our customers safely. together with
+                    passion.
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    Imagination what we can easily see is only a small
+                    percentage.
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    Quality never goes out of style. safety, quality,
+                    professionalism.
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="about-icon">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </div>
+
+                  <p class="about-text">
+                    The quality shows in every move we make where business
+                    lives.
+                  </p>
+                </li>
+              </ul>
+
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle">All Services</p>
+
+            <h2 class="h2 section-title">Trusted For Our Services</h2>
+
+            <p class="section-text">
+              additional security of your consignments, all our vehicles are
+              fitted with E-Locks so that once the consignments are loaded and
+              the vehicle door is locked with the E-Lock then the door can be
+              opened only at the destination where the lock is opened with an
+              OTP thereby ensuring zero pilferage or damages to the
+              consignments.
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/EGze6JuIeU0?si=QCIIBI_fs5KOMuyS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <ul class="service-list grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-1.png"
+                      width="80"
+                      height="60"
+                      loading="lazy"
+                      alt="Truck"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">01</span> Air Freight
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail </span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                    <!-- <body> <p>For more information, <a href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780" target="_blank">View Details</a>.</p> -->
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/ROAD.jpeg"
+                      width="74"
+                      height="60"
+                      loading="lazy"
+                      alt="Ship"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">02</span> Road Freight
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail</span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/OIP.jpeg"
+                      width="80"
+                      height="70"
+                      loading="lazy"
+                      alt="Airplane"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">03</span> container Freight
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail</span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/bulker2.webp"
+                      width="80"
+                      height="70"
+                      loading="lazy"
+                      alt="Train"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">04</span> bulker Freight
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail</span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-5.png"
+                      width="63"
+                      height="60"
+                      loading="lazy"
+                      alt="Trolley"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">05</span> Warehousing
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail</span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/service-icon-6.png"
+                      width="46"
+                      height="60"
+                      loading="lazy"
+                      alt="Paper"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <span class="span">06</span> Project Cargo
+                  </h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <ion-icon
+                      name="chevron-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <span class="span">View Detail</span>
+                    <a
+                      href="https://www.zaubacorp.com/company/MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED/U74999MH2017PTC291780"
+                      target="_blank"
+                      style="color: orange"
+                      >View Details</a
+                    >
+                  </a>
+                  
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="video-container">
+              <video class="video" muted>
+                <source
+                  src="./assets/images/mixkit-cargo-truck-driving-on-the-highway-28787-hd-ready.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <script>
+                document.querySelector('.video-container').addEventListener('mouseenter', function() {
+                    var video = this.querySelector('.video');
+                    video.play();
+                });
+            
+                document.querySelector('.video-container').addEventListener('mouseleave', function() {
+                    var video = this.querySelector('.video');
+                    video.pause();
+                    video.currentTime = 0;
+                });
+            </script>    
+          </div>
+          
+        </section>
+        <h2 style="color: orange;">Logistic Services in India</h2>
+       
+
+            
+                <div class="container"> <div class="slider"> <div class="client-card">
+                <img src="https://th.bing.com/th?id=OIP.qLfV9-PrqUwDgnDiP3JWVgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Tata Logo" class="client-logo"> </div> <div class="client-card"> 
+                <img src="https://th.bing.com/th?id=OIP.34U9WnVrS2Rsfg1ZfMG99AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="JSW Logo" class="client-logo"> </div> <div class="client-card"> 
+                <img src="data:image/jpeg;base64,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" alt="JSW Logo" class="client-logo"> </div> <div class="client-card"> 
+                <img src="https://th.bing.com/th?id=OIP._mKN-XWUleASlO4pPHqXeQHaD3&w=346&h=180&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Another JSW Logo" class="client-logo"> </div> <!-- Add more client cards as needed --> </div> </div>
+                <script src="script.js"></script>                                                                       
+                 
+
+
+
+
+
+       
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" aria-label="feature">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Estimation</p>
+
+                <h2 class="h2 section-title">Has a wide range of solutions</h2>
+<!--               
+                <ul class="debasish-ul"> <li class="debasish-li"><strong>Blue Dart:</strong> Known for its extensive network and reliable service. Ideal for domestic deliveries within India.</li> 
+                  <li class="debasish-li"><strong>DHL:</strong> A global leader in logistics with a strong presence in India. Excellent for both international and domestic logistics solutions.</li> 
+                  <li class="debasish-li"><strong>Delhivery:</strong> Offers innovative logistics solutions and a wide reach. Effective for last-mile delivery and comprehensive logistics management.</li> 
+                  <li class="debasish-li"><strong>Ecom Express:</strong> Specializes in e-commerce logistics and express parcel delivery. Best suited for e-commerce businesses needing specialized services.</li>
+                   <li class="debasish-li"><strong>Gati Limited:</strong> Provides comprehensive logistics and supply chain solutions. Useful for streamlining overall logistics operations.</li> </ul> 
+                  </div> <div class="debasish-section"> <h2>Partnering with E-commerce Platforms</h2> <ul class="debasish-ul">
+                     <li class="debasish-li"><strong>Flipkart:</strong> Collaboration can enhance your reach and online presence in the Indian market. Access to a large customer base and integrated logistics solutions.</li>
+                      <li class="debasish-li"><strong>Amazon:</strong> Partnering with Amazon allows for extensive market reach and fulfillment services. Leverages Amazon’s logistics network for efficient distribution.</li> 
+                    </ul> </div> <div class="debasish-section"> <h2>Key Performance Indicators (KPIs)</h2> <ul class="debasish-ul"> <li class="debasish-li"><strong>On-time Delivery Rate:</strong> Measures the percentage of shipments delivered within the agreed-upon timeframe.</li> 
+                      <li class="debasish-li"><strong>Order Accuracy:</strong> Assesses the accuracy of order fulfillment to ensure customers receive the correct items.</li> <li class="debasish-li"><strong>Inventory Turnover:</strong> Indicates how often inventory is sold and replaced over a period.</li> 
+                      <li class="debasish-li"><strong>Warehouse Utilization:</strong> Evaluates how efficiently warehouse space is used.</li> <li class="debasish-li"><strong>Transportation Cost per Unit:</strong> Calculates the cost of transporting each unit of product.</li> 
+                      <li class="debasish-li"><strong>Average Order Processing Time:</strong> Measures the time taken to process an order from receipt to shipment.</li> 
+                      
+                      <li class="debasish-li"><strong>Order Cycle Time:</strong> Tracks the total time from when an order is placed to when it is delivered.</li> 
+                      <li class="debasish-li"><strong>Freight Cost per Shipment:</strong> Assesses the cost of shipping each shipment.</li> </ul> </div>
+ -->
+
+
+
+
+ <body class="custom-body"> <!-- Other elements in your HTML page --> 
+  <div class="debasish-scroll-container"> <div class="debasish-section" onclick="focusCard(this)"> 
+    <h2>Collaboration with Logistics Companies</h2> <ul class="debasish-ul"> <li class="debasish-li">
+      <strong>Blue Dart:</strong> Known for its extensive network and reliable service. Ideal for domestic deliveries within India.</li>
+       <li class="debasish-li"><strong>DHL:</strong> A global leader in logistics with a strong presence in India. Excellent for both international and domestic logistics solutions.</li> 
+       <li class="debasish-li"><strong>Delhivery:</strong> Offers innovative logistics solutions and a wide reach. Effective for last-mile delivery and comprehensive logistics management.</li> 
+       <li class="debasish-li"><strong>Ecom Express:</strong> Specializes in e-commerce logistics and express parcel delivery. Best suited for e-commerce businesses needing specialized services.</li> 
+       <li class="debasish-li"><strong>Gati Limited:</strong> Provides comprehensive logistics and supply chain solutions. Useful for streamlining overall logistics operations.</li> </ul> 
+      </div> <div class="debasish-section" onclick="focusCard(this)"> <h2>Partnering with E-commerce Platforms</h2> <ul class="debasish-ul"> <li class="debasish-li"><strong>Flipkart:</strong> Collaboration can enhance your reach and online presence in the Indian market. Access to a large customer base and integrated logistics solutions.</li>
+         <li class="debasish-li"><strong>Amazon:</strong> Partnering with Amazon allows for extensive market reach and fulfillment services. Leverages Amazon’s logistics network for efficient distribution.</li> </ul>
+         </div> <div class="debasish-section" onclick="focusCard(this)"> <h2>Key Performance Indicators (KPIs)</h2> <ul class="debasish-ul"> <li class="debasish-li"><strong>On-time Delivery Rate:</strong> Measures the percentage of shipments delivered within the agreed-upon timeframe.</li> 
+          <li class="debasish-li"><strong>Order Accuracy:</strong> Assesses the accuracy of order fulfillment to ensure customers receive the correct items.</li>
+           <li class="debasish-li"><strong>Inventory Turnover:</strong> Indicates how often inventory is sold and replaced over a period.</li> 
+           <li class="debasish-li"><strong>Warehouse Utilization:</strong> Evaluates how efficiently warehouse space is used.</li> 
+           <li class="debasish-li"><strong>Transportation Cost per Unit:</strong> Calculates the cost of transporting each unit of product.</li>
+            <li class="debasish-li"><strong>Average Order Processing Time:</strong> Measures the time taken to process an order from receipt to shipment.</li>
+             <li class="debasish-li"><strong>Order Cycle Time:</strong> Tracks the total time from when an order is placed to when it is delivered.</li>
+             <li class="debasish-li"><strong>Freight Cost per Shipment:</strong> Assesses the cost of shipping each shipment.</li> </ul> </div> </div>
+
+
+             <!-- javascript for estimitor -->
+             <script>
+              function focusCard(card) 
+              { 
+                // Remove focus from all cards 
+              var cards = document.querySelectorAll('.debasish-section'); cards.forEach(function(card) { card.classList.remove('focused'); }); 
+              // Add focus to the clicked card 
+              card.classList.add('focused'); }
+              </script>
+
+
+
+
+
+
+
+
+
+
+            <!-- </div>
+              <a href="#" class="btn">Read More</a>
+            </div> -->
+
+            <ul class="feature-list grid-list">
+              <li>
+                <div class="feature-card" style="--card-number: '01'">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/feature-icon-1.png"
+                      width="72"
+                      height="91"
+                      alt=""
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Solutions and specialized</h3>
+
+                  <p class="card-text">
+                    Our aim is to optimize and improve your supply chain so that
+                    we can give you the best service
+                  </p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card" style="--card-number: '02'">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/feature-icon-2.png"
+                      width="94"
+                      height="94"
+                      alt=""
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Multiple warehouses</h3>
+
+                  <p class="card-text">
+                    We provide multiple drop off and pickup locations so you
+                    don't have to worry. And you should not face any kind...
+                  </p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card" style="--card-number: '03'">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/feature-icon-3.png"
+                      width="93"
+                      height="93"
+                      alt=""
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Tracking made easy</h3>
+
+                  <p class="card-text">
+                    A tracking number for the entire process. so that you can
+                    find the exact position. this process will help you
+                  </p>
+
+                  <a href="#" class="card-btn" aria-label="Read more">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle">Projects</p>
+
+            <h2 class="h2 section-title">Featured Projects</h2>
+
+            <!-- <p class="mlpl">Market Research: Gathering insights into your target audience, competitors, and industry trends.</p> 
+            <p class="mlpl">Business Model Development: Refining your value proposition, revenue streams, and cost structure.</p>
+             <p class="mlpl">Branding and Marketing: Creating a strong brand identity and developing marketing strategies to attract customers.</p> 
+             <p class="mlpl">Funding Strategies: Exploring different funding options, from bootstrapping to seeking investors.</p> 
+             <p class="mlpl">Operational Efficiency: Streamlining processes to reduce costs and improve productivity.</p> 
+             <p class="mlpl">Customer Experience: Enhancing the overall experience for your customers through better service and engagement.</p> -->
+
+             <body class="mlpl__body">
+               <div class="mlpl__container">
+                 <h1 class="mlpl__header">GOALS</h1> <ul class="mlpl__list"> 
+                  <li class="mlpl__item">Market Research: Gathering insights into your target audience, competitors, and industry trends.</li> 
+                  <li class="mlpl__item">Business Model Development: Refining your value proposition, revenue streams, and cost structure.</li>
+                   <li class="mlpl__item">Branding and Marketing: Creating a strong brand identity and developing marketing strategies to attract customers.</li>
+                    <li class="mlpl__item">Funding Strategies: Exploring different funding options, from bootstrapping to seeking investors.</li> 
+                    <li class="mlpl__item">Operational Efficiency: Streamlining processes to reduce costs and improve productivity.</li> 
+                    <li class="mlpl__item">Customer Experience: Enhancing the overall experience for your customers through better service and engagement.</li> 
+                  </ul> </div> </body>
+
+
+
+                  <!-- chatbot -->
+
+                  <!-- <body class="mlpl_chat__body">
+                     <div class="mlpl_chat__container">
+                     <h1 class="mlpl_chat__header">Optimus Prime Toggle</h1> 
+                     <div class="dev_robot" id="dev_robot">🤖</div> 
+                    <button class="mlpl_chat__button" onclick="toggleOptimusPrime()">Toggle Optimus Prime</button>
+                   </div>
+               
+                   <script> 
+                   function toggleOptimusPrime() 
+                   { const robot = document.getElementById('dev_robot');
+                    robot.classList.toggle('transformed'); }
+                     </script> -->
+
+
+            <ul class="project-list">
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Warehousing , Distrbution</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Warehouse inventory</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-2.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Logistics, Analytics</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Minimize Manufacturing</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Warehousing , Distrbution</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Warehouse inventory</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-4.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Logistics, Analytics</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Minimize Manufacturing</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-5.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Warehousing , Distrbution</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Warehouse inventory</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 397; --height: 352"
+                  >
+                    <img
+                      src="./assets/images/project-6.jpg"
+                      width="397"
+                      height="352"
+                      loading="lazy"
+                      alt="Warehouse inventory"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="action-btn" aria-label="View image">
+                    <ion-icon name="expand-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-content">
+                    <p class="card-tag">Logistics, Analytics</p>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Minimize Manufacturing</a>
+                    </h3>
+
+                    <a href="#" class="card-link">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" aria-label="blog" id="blog">
+          <div class="container">
+            <p class="section-subtitle">Our Blogs</p>
+
+            <h2 class="h2 section-title">Recent news & events</h2>
+
+            <p class="section-text">
+              <div class="money_mera_do"> <h2>The Future of Logistics</h2> <p>Explore trends and predictions for the logistics industry, including the impact of automation and digital transformation.</p> </div> <div class="money_mera_do"> <h2>Customer Success Stories</h2> <p>Share case studies of successful projects or satisfied customers, showcasing MLPL's expertise and reliability.</p> </div> <div class="money_mera_do"> <h2>Employee Spotlight</h2> <p>Highlight the contributions of key employees or teams within MLPL, celebrating their achievements and dedication.</p> </div> <div class="money_mera_do"> <h2>Industry Insights</h2> <p>Provide expert opinions and analysis on current issues and challenges facing the logistics sector, offering valuable insights to readers.</p> </div> <div class="money_mera_do"> <h2>Franchise Development</h2> <p>Discuss the process and benefits of developing new franchises, including tips for potential franchisees and success stories from existing franchises.</p> </div> <div class="container"> <div class="money_mera_do"> <h2>Expansion Plans</h2> <p>Highlight MLPL's recent expansion into new regions or countries, emphasizing the strategic importance of these new locations.</p> </div> <div class="money_mera_do"> <h2>Partnerships and Collaborations</h2> <p>Report on any new partnerships or collaborations with other companies, such as joint ventures or strategic alliances.</p> </div> <div class="money_mera_do"> <h2>Technological Advancements</h2> <p>Discuss the implementation of new technologies, such as AI, IoT, or blockchain, to improve logistics operations.</p> </div> <div class="money_mera_do"> <h2>Sustainability Initiatives</h2> <p>Share news about MLPL's efforts to adopt sustainable practices, such as using electric vehicles or reducing carbon emissions.</p> </div> <div class="money_mera_do"> <h2>Awards and Recognitions</h2> <p>Mention any recent awards or recognitions that MLPL has received for its services or contributions to the logistics industry.</p> </div> </div>
+            </p>
+           
+            <ul class="blog-list grid-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 770; --height: 500"
+                  >
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      width="770"
+                      height="500"
+                      loading="lazy"
+                      alt="At the end of the day, going forward, a new normal that has evolved from. your only logistic partner."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="card-meta" datetime="2022-08-02">
+                      <span class="span">02</span> Aug
+                    </time>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">
+                        At the end of the day, going forward, a new normal that
+                        has evolved from. your only logistic partner.
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      New chip traps clusters of migrating tumor cells
+                      asperiortenetur, blanditiis odit. typesetting industry the
+                      standard dummy text ever since the when an printer.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <ion-icon
+                        name="chevron-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <span class="span">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 770; --height: 500"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="770"
+                      height="500"
+                      loading="lazy"
+                      alt="Going forward, a new normal that has evolved from generation. moving your products across all borders."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="card-meta" datetime="2022-08-21">
+                      <span class="span">21</span> Aug
+                    </time>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">
+                        Going forward, a new normal that has evolved from
+                        generation. moving your products across all borders.
+                      </a>
+                    </h3>
+
+                    <p class="card-text">
+                      New chip traps clusters of migrating tumor cells
+                      asperiortenetur, blanditiis odit. typesetting industry the
+                      standard dummy text ever since the when an printer.
+                    </p>
+
+                    <a href="#" class="btn-link">
+                      <ion-icon
+                        name="chevron-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <span class="span">Read More</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #NEWSLETTER
+      -->
+
+        <section class="section newsletter" aria-label="newsletter">
+          <div class="container">
+            <figure class="newsletter-banner img-holder">
+              <img
+                src="./assets/images/newsletter-banner.png"
+                width="100"
+                height="100"
+                alt="newsletter banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="newsletter-content">
+              <h2 class="h2 section-title">Subscribe for offers and news</h2>
+
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter Your Email"
+                  aria-label="email"
+                  class="email-field"
+                />
+
+                <button type="submit" class="newsletter-btn">
+                  Subscribe Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <a href="#" class="logo">Transportion</a>
+
+            <p class="footer-text">
+              Location- Thane, Maharashtra, India
+              Bhiwandi Thane, Thane, Maharashtra
+              Mayureshwar Logistics Private Limited, 85 Mlpl House,
+              Near Govt Ashram Shala, Nimbavali, Yewai Rd, Village Bhinar, 
+              Bhiwandi Thane, Thane, Maharashtra,
+              Pin Code-421302
+
+                         
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Warehouse</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bulker Freight</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cointiner Freight</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Road Freight</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Packaging</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+
+            <li>
+              <a href="indexo.html" class="footer-link">Business Consulting</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Track Your Shipment</a>
+            </li>
+
+            <li> 
+              <!-- <a href="https://ctyf.co.in/SiteLogin.aspx?ReturnUrl=%2frealtimedashboard-w4rDisOKw4nDkMOKw4vDj8OCw4_DicOQw4rDkMKWwprCi8KIwpLCncKC" class="_footer-link">Click here to access the Real-time Dashboard</a>
+               -->
+              <!-- <a href="#" onclick="checkPassword()">Real-time Dashboard</a> -->
+            </li>
+
+            <li> 
+              <!-- <a href="https://mahindraimaxx.intangles.com/#/mapv2" class="_footer-link">check for Mahindra</a> -->
+              <a href="#" onclick="checkPassword('https://ctyf.co.in/SiteLogin.aspx?ReturnUrl=%2frealtimedashboard-w4rDisOKw4nDkMOKw4vDj8OCw4_DicOQw4rDkMKWwprCi8KIwpLCncKC', 'LAKECITY_123')">GTROPY</a><br> <a href="#" onclick="checkPassword('https://mahindraimaxx.intangles.com/#/mapv2', 'LAKECITY_1234')">MAHINDRA</a><br><a href="#" onclick="checkPassword('https://ialert2.ashokleyland.com/login', 'LAKECITY_12345')">AIRLAND</a><br>
+            </li>
+
+            <li>
+              <!-- <li> <a href="https://ialert2.ashokleyland.com/login" class="_footer-link">check ashok learland</a>
+             -->
+            </li>
+
+            <li>
+              <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="make.html" class="footer-link">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2025 Transportion. All Rights Reserved by
+            <a href="#" class="copyright-link">mayureshwar logistic private limited</a>
+          </p>
+        </div>
+        <!-- <script> function checkPassword() { 
+          const password = prompt("Enter the password to access the link:");
+        if (password === "LAKECITY_THANE") { // Replace "yourpassword" with the actual password 
+        window.location.href = "https://ctyf.co.in/SiteLogin.aspx?ReturnUrl=%2frealtimedashboard-w4rDisOKw4nDkMOKw4vDj8OCw4_DicOQw4rDkMKWwprCi8KIwpLCncKC"; // Replace with the actual link
+         } 
+        else {
+           alert("Incorrect password!");
+           }
+           } 
+           </script> -->
+
+           <script> function checkPassword(link, correctPassword) { const password = prompt("Enter the password to access the link:"); if (password === correctPassword) { window.location.href = link; } else { alert("Incorrect password!"); } } </script>
+      </div>
+    </footer>
+
+
+
+   
+     
+
+<!-- robot -->
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+    <style> .money_mera_do { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transform: translateY(0); animation: springAnimation 0.5s ease-out, colorChange 3s infinite alternate; } @keyframes springAnimation { 0% { transform: translateY(-30px); } 50% { transform: translateY(15px); } 100% { transform: translateY(0); } } @keyframes colorChange { 0% { background-color: #f9f9f9; color: #000; } 100% { background-color: #ffeb3b; color: #333; } } .money_mera_do h2 { margin-top: 0; } .container { display: flex; flex-wrap: wrap; justify-content: center; } </style>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

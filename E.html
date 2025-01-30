@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="e.css">
+</head>
+<body>
+    <div class="filter">
+        <label for="position">Filter by Position:</label>
+        <select id="position" onchange="filterEmployees()">
+            <option value="all">All</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+        </select>
+    </div>
+
+    <div class="employee-cards" id="employeeCards">
+        <div class="card" data-position="developer">
+            <div class="image-container">
+                <img src="./assets/images/employee1.jpeg" alt="John Doe" class="employee-image">
+                <div class="overlay">John Doe<br>Developer</div>
+            </div>
+            <p>Location: New York</p>
+            <p>Experience: 5 year in web devloper</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="designer">
+            <div class="image-container">
+                <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                <div class="overlay">Jane Smith<br>Designer</div>
+            </div>
+            <p>Location: San Francisco</p>
+            <p>Experience: 7year in UIUX</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="developer">
+            <div class="image-container">
+                <img src="./assets/images/images (2).jpeg" alt="Michael Brown" class="employee-image">
+                <div class="overlay">Michael Brown<br>Developer</div>
+            </div>
+            <p>Location: Austin</p>
+            <p>Experience: 9 year in web OPERATIONS</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="card" data-position="manager">
+            <div class="image-container">
+                <img src="./assets/images/images.jpeg" alt="Emily Johnson" class="employee-image">
+                <div class="overlay">Emily Johnson<br>Manager</div>
+            </div>
+            <p>Location: Chicago</p>
+            <p>Experience: 15 year in MANAGEMENT OF FINANCE</p>
+            <P>emailid-debasishpadhy111@gmail.com</P>
+        </div>
+        <div class="employee-cards" id="employeeCards">
+            <div class="card" data-position="developer">
+                <div class="image-container">
+                    <img src="./assets/images/employee1.jpeg" alt="John Doe" class="employee-image">
+                    <div class="overlay">John Doe<br>Developer</div>
+                </div>
+                <p>Location: New York</p>
+                <p>Experience: 5 year in web devloper</p>
+                <P>emailid-debasishpadhy111@gmail.com</P>
+            </div>
+            <div class="employee-cards" id="employeeCards">
+                <div class="card" data-position="developer">
+                    <div class="image-container">
+                        <img src="./assets/images/employee1.jpeg" alt="John Doe" class="employee-image">
+                        <div class="overlay">John Doe<br>Developer</div>
+                    </div>
+                    <p>Location: New York</p>
+                    <p>Experience: 5 year in web devloper</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                <div class="card" data-position="designer">
+                    <div class="image-container">
+                        <img src="./assets/images/images (1).jpeg" alt="Jane Smith" class="employee-image">
+                        <div class="overlay">Jane Smith<br>Designer</div>
+                    </div>
+                    <p>Location: San Francisco</p>
+                    <p>Experience: 7year in UIUX</p>
+                    <P>emailid-debasishpadhy111@gmail.com</P>
+                </div>
+                
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

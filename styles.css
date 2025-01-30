@@ -1,0 +1,241 @@
+/* root tag style */
+*{
+  /* font-size: 20px; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+  font-weight:400;
+  font-size: 12px;
+  color: #444444;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: 'inter', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: #93C5FD;
+}
+
+a:hover{
+  color:blue;
+}
+
+#navbar {
+  padding: 8px;
+  margin: 0;
+}
+
+#banner {
+  object-fit: cover;
+}
+
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #222222;
+    
+}
+
+#banner {
+   width: 90%; 
+   height: 70px;
+}
+
+#about {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#description {
+  width: 50%;
+  padding-right: 8px;
+  font-size: 1.13rem
+}
+
+#team {
+  width: 50%;
+}
+
+#team-image {
+  border-radius: 5px;
+  width: 100%
+}
+
+#jobs-table{
+  width: 100%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+#jobs-table tr:nth-child(even){
+  background-color: #EFF6FF;
+}
+/* .jobs-header-row{
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+} */
+
+.jobs-header-row th{
+  border: 1px solid gray;
+  padding: 8px;
+  background-color: #E0F2FE;
+  font-weight: 500;
+  color: #222222;
+  /* text-align: left; */
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.jobs-data-row td{
+  border-right: 1px solid gray;
+  padding: 8px;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+h2 {
+  text-align: center;
+}
+
+#jobs {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+h3 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+#application1{
+  max-width: 800px;
+  margin:20px auto;
+  padding:10px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #F3F4F6;
+}
+#application-form1{
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+#application-form1 label{
+  font-size: 1.25rem;
+  font-weight:400;
+}
+
+#application-form1 input[type="text"],input[type="email"], input[type="date"], input[type="file"], input[type="submit"], select, textarea{
+  margin-top: 3px;
+  margin-bottom:15px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: #F9FAFB;
+  border-color: #E5E7EB;
+  border-radius: 5px;
+  width: 310px;
+}
+
+#application-form1 input:hover{
+  
+  border-color:#9CA3AF;
+}
+
+#application-form1 input[type=submit]{
+  background-color:#3B82F6;
+  color:white;
+  font-weight:600;
+}
+
+#application-form1 input[type=submit]:hover{
+  background-color: green;
+}
+
+
+#footer {
+  background-color: ghostwhite;
+  padding: 8px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;  
+}
+
+#footer-links li {
+  display: inline;
+  margin: 0 16px;
+  font-size: 1rem;
+}
+
+.copyright {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+#application{
+  max-width:800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+#application-form{
+  font-weight:600;
+}
+
+#application-form label{
+  font-weight:600;
+}
+
+#application-form input, select, textarea{
+  padding: 8px;
+  font-size: 20px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form-group{
+  margin-top: 16px;
+}
+
+.form-group textarea{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type="checkbox"]{
+  width:16px;
+  height:16px;
+}
+
+.form-group input[type="Submit"]{
+  background-color: #3B82F6;
+  color:white;
+  font-weight:500;
+  padding:16px;
+  cursor:pointer;
+}
+.banner-container { position: relative; display: inline-block; } 
+#banner { display: block;  width:"700x";}
+ #logo { position: absolute; top: 10px; 
+  /* Adjust the position as needed */
+   left: 10px;
+    /* Adjust the position as needed */ 
+    height: 90px; /* Adjust the logo size as needed */
+ }
+ #banner {
+  width: 450%;
+}

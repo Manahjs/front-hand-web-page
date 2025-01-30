@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- <link rel="stylesheet" href="css/owl-corousel.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl-theme.css">
+    <link rel="stylesheet" href="css/owl-transition.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/swiperjs.css"/> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- External Links End -->
+    <title>Mayuershawari logistic private limited</title>
+    <style>
+ 
+
+    </style>
+</head>
+<style>
+ 
+</style>
+<body>
+    <div id="mobileView" class="demo11">
+      <div class="mobileNavBar">
+        <a href="index.html" class="mobile-navbar-brand"><img src="adv_mlpl/images/mlpl.png" alt="mayureshwar-logistics-private-limited" class="navbar-logo"></a>
+        <div id="burgerBtn">
+          <svg fill="none" id="openMe" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="closeMe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </div>
+      </div>
+
+        <ul id="mobile-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+        <header class="header-area">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid p-0">
+                    <a href="index.html" class="navbar-brand"><img src="./adv_mlpl/images/mlpl.png" alt="eden-logo" class="navbar-logo"></a>
+                    
+                    <!-- <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                        <span class="menu-icon-bar"></span>
+                    </button>
+       -->
+                    
+                    <!-- <div id="main-nav" class=" justify-content-center">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a href="#" class="nav-item nav-link active">
+ABOUT
+                            </a></li>
+                            <li><a href="#" class="nav-item nav-link">SERVICES</a></li>
+                            
+                            <li><a href="#" class="nav-item nav-link">PROJECTS</a></li>
+                            <li><a href="#contact-us" class="nav-item nav-link">CONTACT</a></li>
+    
+                        </ul>
+                    </div> -->
+                    <aside class="menu">
+                      <ul>
+                        <li>
+                          <a class="" data-cursor="1" href="index.html" title="home" target="">
+                              <div class="text">
+                                  <div class="text_line">Home</div>
+                                  <div class="text_line">Home</div>
+                              </div>
+                          </a>
+                      </li>
+                        <li>
+                          <a class="nav-link" data-cursor="1" href="about-us.html" title="About" target="">
+                              <div class="text">
+                                  <div class="text_line">About</div>
+                                  <div class="text_line">About</div>
+                              </div>
+                          </a>
+                      </li>
+                                                  <li>
+                                  <a class="" data-cursor="1" href="services.html" title="Services" target="">
+                                      <div class="text">
+                                          <div class="text_line">Services</div>
+                                          <div class="text_line">Services</div>
+                                      </div>
+                                  </a>
+                              </li>
+                                                
+                                                  <li>
+                                  <a class="" data-cursor="1" href="contact-us.html" title="Contact" target="">
+                                      <div class="text">
+                                          <div class="text_line">Contact</div>
+                                          <div class="text_line">Contact</div>
+                                      </div>
+                                  </a>
+                              </li>
+                                          </ul>
+                  </aside>
+                  <a href="projects.html"><button class="custom-btn btn-13">PROJECTS</button></a>
+                </div>
+            </nav>
+         
+                 
+           
+              
+              
+            
+            
+            
+        </header>
+        <div id="mobileBodyContent">
+ 
+    <!-- Main-SLider -->
+    
+    <div class="banner">
+        <div id="app" class="wrapper" v-cloak v-bind:class="{'is-previous': isPreviousSlide, 'first-load': isFirstLoad}">
+            <div class="slide-wrapper" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
+              <div class="slide-inner container-fluid">
+                <div class="slide-bg-text">
+                  <p>{{ slide.headlineFirstLine }}</p>
+                  <p>{{ slide.headlineSecondLine }}</p>
+                </div>
+                <div class="slide-rect-filter">
+             
+                </div>
+                <div class="slide-content">
+                  <h1 class="slide-content-text">
+                    <p>{{ slide.headlineFirstLine }}</p>
+                    <p>{{ slide.headlineSecondLine }}</p>
+                  </h1>
+                </div>
+               </div>
+            </div>
+            <div class="case-slider__navigation">
+              <div class="prevSlide_btn">
+                <button @click="prevSlide(index)" v-for="(slide, index) in slides" v-if="currentSlide!=0" class="slidermobilebtn prevSlider_btn"></button>
+              </div>
+              <div class="nextSlide_btn">
+                <button @click="nextSlide(index)" v-for="(slide, index) in slides" v-if="slides.length-1!=currentSlide"  class="slidermobilebtn"></button>
+              </div>
+            </div>
+            <div class="controls-container">
+              <button class="controls-button custom-btn btn--control " v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{ slide.buttonName }}</button>
+            </div>
+            <!-- <div class="pagination-container">
+              <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
+            </div> -->
+          </div>
+    </div>
+   
+<!-- About Us Section -->
+<section class="about-us-eden">
+    <div class="align-items-center eden-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+            <img src="./images/eden-aboutus.png" alt="Eden-About-Us" class="eden-about-us-img">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 left-move-globl">
+          <div class="wrapper-container float-right">
+            <p class="pre-head">
+              WE ARE MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED - ‘DESIGN CONSULTANTS’!
+            </p>
+            
+                <h2 class="main-head-eden">
+                  We craft innovative and creative structural designs & manage the same for our clientele!!
+                </h2>
+           
+            
+                <p class="content-detail-sm mb-4">Being established in 2017 we have a professional experience of around five years, where we have served various clients from heterogeneous business concerns throughout the different, residential, commercial, industrial and public sectors of society. Eden was named so by Mr. Sheel Shah and is completely his brainchild.</p>
+               
+               
+                <div class="content_button border-black">
+                    <a href="about-us.html" class="btn-eden-target border-dark">
+                        <span class="link-text">ABOUT US</span>
+                        <!-- <i class="magnet fas fa-long-arrow-alt-right"></i> -->
+                        <span class="magnet"><img src="./images/thin-arrow.svg" class="arrow-img-thin"></span>
+                      </a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- What we Do Section -->
+<section class="what-we-do-eden bg-black">
+  <div class="container-fluid eden-container">
+        <div class="row">
+         
+        <div class="col-lg-6 col-md-12 col-sm-12 left-space">
+          <div class="b-box">
+            <p class="pre-head text-white">
+                WHAT WE DO
+            </p>
+            
+                <h2 class="main-head-eden text-white">
+                  Cater the finest structural engineering solutions & Direct the top-quality execution
+                
+                </h2>
+           
+            
+                <p class="content-detail-sm mb-4 ">We get you all round design and build process ideation and support services for your space keeping you in full transparency with a thorough dedication to ensure satisfactory customer experiences. 
+                </p>
+                <div class="content_button border-white res-margin">
+                    <a href="services.html" class="btn-eden-target">
+                        <span class="link-text text-white">EXPLORE SERVICES</span>
+                        <!-- <i class="magnet fas fa-long-arrow-alt-right text-white"></i> -->
+                        <span class="magnet"><img src="./images/thin-arrow.svg" class="arrow-img-thin arrow-white-img"></span>
+                      </a>
+                </div>
+                </div>
+              </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+         
+            <div class="row justify-content-end">
+                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
+                    <div class="card bg-dark h-100">
+                        <div class="card-title card-cs">
+                            <p>
+                              Structural <br> Design
+                        </p>
+                        </div>
+                        <div class="card-corner">
+                            <img src="./images/Project-Management.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
+                    <div class="card bg-dark h-100">
+                        <div class="card-title card-cs">
+                            <p>
+                            Project Management <br> Consultancy
+                        </p>
+                        </div>
+                        <div class="card-corner">
+                            <img src="./images/Project-Management1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
+                    <div class="card bg-dark h-100">
+                        <div class="card-title card-cs">
+                            <p>
+                            Industrial <br> Architecture
+                        </p>
+                        </p>
+                        </div>
+                        <div class="card-corner">
+                            <img src="./images/Industrial.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
+                    <div class="card bg-dark h-100">
+                        <div class="card-title card-cs">
+                            <p>
+                              Cost  <br> Consulting
+                            </p>
+                        </div>
+                        <div class="card-corner">
+                            <img src="./images/Quantity-s.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Work Section -->
+<section class="our-work-eden max-width-example">
+<div class="container-fluid eden-container col-12">
+<div class="d-flex align-items-center responsive-flex">
+    <div class="col-lg-8 col-md-12 col-sm-12 our-work-tabSlider">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <div class="cd-slider">
+        <ul>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/Mithakhali1.webp);"></div>
+            <div class="content-slider">
+                <h1>Aastha Realty</h1>
+                <h4>Mithakali, Ahmedabad</h4>
+            
+                <p><b>Architect:</b>  99 Studio</p>
+                <p><b>Scale:</b>   G+1</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/Mithakhali2.webp);"></div>
+            <div class="content-slider">
+                <h1>Aastha Realty</h1>
+                <h4>Mithakali, Ahmedabad</h4>
+            
+                <p><b>Architect:</b>  99 Studio</p>
+                <p><b>Scale:</b>   G+1</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/ramada6.webp);"></div>
+            <div class="content-slider">
+                <h1>Ramada Resort</h1>
+                <h4>Sasan-Gir, Gujarat</h4>
+            
+                <p><b>Architect:</b>  DPA Design Studio</p>
+                <p><b>Scale:</b>   -</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+     </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">   <div class="cd-slider">
+        <ul>
+          
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/boiler2.jpg);"></div>
+            <div class="content-slider">
+                <h1>MEE & Boiler Unit</h1>
+                <h4>Naroda, Ahmedabad</h4>
+               
+                <p><b>Architect:</b>  - </p>
+                <p><b>Scale:</b>   - </p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/aastha1.webp);"></div>
+            <div class="content-slider">
+                <h1>Aastha Projects</h1>
+                <h4>New Vasna, Gujarat</h4>
+            
+                <p><b>Architect:</b>  Ar. Netra Majithiya</p>
+                <p><b>Scale:</b>   2.3 lac sq.ft. (10 storey)</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/boiler3.jpg);"></div>
+            <div class="content-slider">
+                <h1>MEE & Boiler Unit</h1>
+                <h4>Naroda, Ahmedabad</h4>
+               
+                <p><b>Architect:</b>  - </p>
+                <p><b>Scale:</b>   - </p>
+            </div>
+          </li>
+          
+       
+        </ul>
+      </div></div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">   <div class="cd-slider">
+        <ul>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/Arboreal2.jpg);"></div>
+            <div class="content-slider">
+                <h1>Arboreal Walkway & Bus terminal</h1>
+                <h4>Pragati Maidan, Delhi</h4>
+               
+                <p><b>Architect:</b>  - </p>
+                <p><b>Scale:</b>   1.5 km Walkway </p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/Arboreal1.jpg);"></div>
+            <div class="content-slider">
+                <h1>Arboreal Walkway & Bus terminal</h1>
+                <h4>Pragati Maidan, Delhi</h4>
+               
+                <p><b>Architect:</b>  - </p>
+                <p><b>Scale:</b>   1.5 km Walkway </p>
+            </div>
+          </li>
+         
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/Projects/Arboreal4.jpg);"></div>
+            <div class="content-slider">
+                <h1>Arboreal Walkway & Bus terminal</h1>
+                <h4>Pragati Maidan, Delhi</h4>
+               
+                <p><b>Architect:</b>  - </p>
+                <p><b>Scale:</b>   1.5 km Walkway </p>
+            </div>
+          </li>
+        </ul>
+      </div></div>
+
+    </div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12 our-service-right order-index">
+    <p class="pre-head">
+      OUR WORKS
+    </p>
+    
+        <h2 class="main-head-eden our-work-patch">
+          Projects we work for
+        </h2>
+       <div class="nav flex-column nav-pills me-3 nav-wrapper-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="cs-nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> <span class="long-arrow-right"></span>  <span class="cs-nav-tabtext"> Residential Project</span></a>
+        <a class="cs-nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> <span class="long-arrow-right"></span> <span class="cs-nav-tabtext"> Industrial Development</span></a>
+        <a class="cs-nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <span class="long-arrow-right"></span>  <span class="cs-nav-tabtext"> Hospitality Project</span></a>
+        <!-- <a class="cs-nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"> <span class="long-arrow-right"></span>  <span class="cs-nav-tabtext">Other</span></a> -->
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- <section class="max-width-example">
+  <div class="contentss ashish">
+    <h2>theme: "minimal"</h2>
+    <hr />
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
+    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p> 
+    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p> 
+    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p> 
+    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p> 
+    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p> 
+    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p> 
+    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p> 
+    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    <hr />
+    <p>End of content.</p>
+  </div>
+</section> -->
+
+<!-- Testimonial -->
+
+<!-- Slider main container -->
+<section class="testimonial-slider-cover left-patch-p">
+<div class="container eden-container">
+  <div class="row">
+<p class="pre-head">TESTIMONIALS</p>
+
+    <h2 class="main-head-eden our-work-patch">Trusted and appreciated<br> by the experts</h2>
+<div class="testimonials-wrapper">
+    
+<div class="swiper-container testimonial-swiper2 testimonials-swiper swiper-container swiper-unique-id-0 initialized swiper-container-vertical">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="testimonials-item"><span class="testimonials-icon fa fa fa-quote-right"></span><blockquote class="testimonials-description"><p>It has been a pleasure to work with EDEN Design Consultants. They have been supportive at all stages from design to execution. Design is quite detailed and conveyed with clarity in their structural drawings. I would love to work with you in the future.</p></blockquote><h4 class="testimonials-author">Ar. Hitarth & Netra Majithiya, Terra Firma Architects </h4></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials-item"><span class="testimonials-icon fa fa fa-quote-right"></span><blockquote class="testimonials-description">
+              <p>We have worked on multiple government projects with MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED. They have sheer clarity in their design approach as well as in drawings. They have a very supportive approach in other approval and site-clarity parts. We can consider them a good  team member with a technically sound team.
+            </p></blockquote><h4 class="testimonials-author">Er. Urv Patel, SWA Environmental Consultants & Engineers</h4></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials-item"><span class="testimonials-icon fa fa fa-quote-right"></span><blockquote class="testimonials-description">
+              <p>It has always been a satisfying experience to work with MAYURESHWAR-LOGISTICS-PRIVATE-LIMITED. We have been working with EDEN since 2019. Mr. Sheel Shah has a very dynamic approach in structural design. Always ready to try something out of the box. They ensure  structural stability with cost-effective solutions.
+              </p></blockquote><h4 class="testimonials-author">Ar. Tejas Trivedi, T-square Design Studio </h4></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonials-item"><span class="testimonials-icon fa fa fa-quote-right"></span><blockquote class="testimonials-description">
+            <p>
+              I would like to thank MAYURESHWAR mayureshwar-logistics-private-limited Team for their excellent efforts and commitment for helping us work out our designs. I’m impressed with your dedicated attitude towards our workflow, that has helped us avoid unfavourable deficiencies that  may have to different designs and time-delay. Thank you once again and looking  forward to working with you in future projects.
+            </p></blockquote><h4 class="testimonials-author">Ar. Dhwani Patel, Lex & Haze Designs </h4></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="testimonials-item"><span class="testimonials-icon fa fa fa-quote-right"></span><blockquote class="testimonials-description">
+          <p>
+            Team MAYURESHWAR (MLPL)CONSULANTANT is technically proficient and well-equipped to work on large scaled  projects. We have been working on multiple projects with EDEN and we’re  satisfied with their service and approach towards our project. They deliver their  drawings in time and also guide the site work accordingly. Looking forward to  work with them in future. 
+          </p></blockquote><h4 class="testimonials-author">Mr. Purav Patel, Narayan Organics Pvt. Ltd</h4></div>
+    </div>
+      </div>
+    <!-- If we need pagination -->
+    <div class="testimonials-pagination-wrapper">
+    <div class="swiper-pagination"></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Testimonial -->
+
+  <!-- Footer -->
+  <footer class="footer-section bg-black" id="contact-us">
+      <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-12">
+        <div class="">
+        <!-- code here -->
+        <div class="card footer-form">
+           <h2 class="main-head-eden">Lets get in touch</h2>
+            <form class="card-form" onsubmit="sendEmail(); reset(); return false;">
+                
+                    <div class="row justify-content-between">
+                        <div class="input input-w45">
+                            <input type="text" id="name-typewirte" class="input-field eden-inf" value="" required/>
+                            <label class="input-label">Your Name*</label>
+                        </div>
+                             <div class="input input-w45">
+                            <input type="text" id="email-typewirte" class="input-field eden-inf" value="" required/>
+                            <label class="input-label">Email Address*</label>
+                        </div>
+                     </div>
+                     <div class=" row justify-content-between">
+                        <div class="input input-w45">
+                            <input type="text" id="phone-typewirte" class="input-field eden-inf" value="" required/>
+                            <label class="input-label">Phone Number*</label>
+                        </div>
+                             <div class="input input-w45">
+                            <input type="text" id="company-typewirte" class="input-field eden-inf" value="" required/>
+                            <label class="input-label">Company Name</label>
+                        </div>
+                     </div>
+                     <div class="col-12 row">
+                        <div class="input sendBtn-form">
+                            <textarea class="input-field text-area-inf eden-inf" id="comment-typewirte" rows="3" value="My project is related.."></textarea>
+                            <label class="input-label">Write Message*</label>
+                            <button type="submit" class="btn btn-circle btn-xl">
+                              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          viewBox="0 0 491.022 491.022" style="enable-background:new 0 0 491.022 491.022;" xml:space="preserve">
+                                        <g>
+                                          <g>
+                                            <path fill="#ffff" class="send-mail-link" d="M490.916,13.991c-0.213-1.173-0.64-2.347-1.28-3.307c-0.107-0.213-0.213-0.533-0.32-0.747
+                                              c-0.107-0.213-0.32-0.32-0.533-0.533c-0.427-0.533-0.96-1.067-1.493-1.493c-0.427-0.32-0.853-0.64-1.28-0.96
+                                              c-0.213-0.107-0.32-0.32-0.533-0.427c-0.32-0.107-0.747-0.32-1.173-0.427c-0.533-0.213-1.067-0.427-1.6-0.533
+                                              c-0.64-0.107-1.28-0.213-1.92-0.213c-0.533,0-1.067,0-1.6,0c-0.747,0.107-1.493,0.32-2.133,0.533
+                                              c-0.32,0.107-0.747,0.107-1.067,0.213L6.436,209.085c-5.44,2.347-7.893,8.64-5.547,14.08c1.067,2.347,2.88,4.373,5.227,5.44
+                                              l175.36,82.453v163.947c0,5.867,4.8,10.667,10.667,10.667c3.733,0,7.147-1.92,9.067-5.12l74.133-120.533l114.56,60.373
+                                              c5.227,2.773,11.627,0.747,14.4-4.48c0.427-0.853,0.747-1.813,0.96-2.667l85.547-394.987c0-0.213,0-0.427,0-0.64
+                                              c0.107-0.64,0.107-1.173,0.213-1.707C491.022,15.271,491.022,14.631,490.916,13.991z M190.009,291.324L36.836,219.218
+                                              L433.209,48.124L190.009,291.324z M202.809,437.138V321.831l53.653,28.267L202.809,437.138z M387.449,394.898l-100.8-53.013
+                                              l-18.133-11.2l-0.747,1.28l-57.707-30.4L462.116,49.298L387.449,394.898z"/>
+                                          </g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                </svg>
+                            </button>
+                        </div>
+                    
+                     </div>
+                
+              
+            </form>
+            
+        </div>
+    </div>
+    </div>
+
+<div class="col-lg-5 col-md-5 col-sm-12 f-pcm">
+
+    <p class="pre-head  text-white">
+        GET IN TOUCH
+    </p>
+    
+        <h2 class="main-head-eden our-work-patch text-white">
+            We are always there <br> for you!
+        </h2>
+   
+    
+        <p class="content-detail-sm footer-address">
+         BHIWANDI THANE MUMBAI
+        </p>
+        <p class="content-detail-sm footer-address">
+          NR.MILIND WANKDE
+        </p> 
+        <p class="content-detail-sm footer-address">
+          MAYUR WANKDE
+        </p><p class="content-detail-sm mb-4 footer-address">
+          Ahmedabad - 380015
+        </p>
+            
+                <p> <a href="tel:+9199099 04905" class="content-detail-sm text-white footer-address">+91 9337832682</a></p>
+               <p> <a href="mailto:projects@edenconsultants.in" class="content-detail-sm text-white footer-address">  projects@MAYEREASHWARconsultants.in</a></p>
+</div>
+<div class="col-12 text-center pt-5 pb-4">
+    <p class="footer-credit">All rights reserved. © 2018- <span id="currentYear"></span> mayurshawari logistic private limited.</p>
+</div>
+</div>
+</div>
+  </footer>
+</div>
+</div>
+
+    <!-- script Start-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiperjs.js"></script>
+    <script src="js/typewriter.js"></script>
+    <!-- Swiperjs end -->
+    <script src="js/vue.min.js"></script>
+    <script src="js/magnetic.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- script End -->
+    <script>
+      var app = new Vue({
+    el: '#app',
+    data: {
+        currentSlide: 0,
+        isPreviousSlide: false,
+        isFirstLoad: true,
+        slides: [
+            {
+                headlineFirstLine: "EDEN-",
+				headlineSecondLine: "Our Story",
+				buttonName: "EDEN- OUR STORY",
+                // headlineSecondLine: "1",
+                bgImg: "https://ashish-qura.github.io/Eden-Design/images/banner-1.webp",
+                
+            },
+            {
+                headlineFirstLine: "About",
+                headlineSecondLine: "Eden",
+				buttonName: "About EDEN",
+                bgImg: "https://ashish-qura.github.io/Eden-Design/images/banner-2.webp",
+          
+            },
+            {
+                headlineFirstLine: "Building",
+				headlineSecondLine: "Design",
+				buttonName: "building design",
+                // headlineSecondLine: "Ultricies",
+                bgImg: "https://ashish-qura.github.io/Eden-Design/images/banner-3.webp",
+              
+            }
+        ]
+    },
+  // mounted: function () {
+  //   var productRotatorSlide = document.getElementById("app");
+  //       var startX = 0;
+  //       var endX = 0;
+
+  //       productRotatorSlide.addEventListener("touchstart", (event) => startX = event.touches[0].pageX);
+
+  //       productRotatorSlide.addEventListener("touchmove", (event) => endX = event.touches[0].pageX);
+
+  //       productRotatorSlide.addEventListener("touchend", function(event) {
+  //           var threshold = startX - endX;
+
+  //           if (threshold < 150 && 0 < this.currentSlide) {
+  //               this.currentSlide--;
+  //           }
+  //           if (threshold > -150 && this.currentSlide < this.slides.length - 1) {
+  //               this.currentSlide++;
+  //           }
+  //       }.bind(this));
+  // },
+    methods: {
+        updateSlide(index) {
+            index < this.currentSlide ? this.isPreviousSlide = true : this.isPreviousSlide = false;
+            this.currentSlide = index;
+            this.isFirstLoad = false;
+        },
+        nextSlide(index){
+          
+            this.currentSlide++;
+        },
+        prevSlide(index){
+            this.currentSlide--;
+        }
+    }
+})
+    </script>
+    <script>
+        new TypeWriter('#email-typewirte', ['johnduo@email.com']);
+        new TypeWriter('#name-typewirte', ['John Duo']);
+        new TypeWriter('#phone-typewirte', ['98765 43210']);
+        new TypeWriter('#company-typewirte', ['eden design']);
+        new TypeWriter('#comment-typewirte', ['let us know your thoughts']);
+    </script>
+
+<script>
+
+
+let mm = new MagnetMouse({
+  magnet: {
+    element: '.magnet'
+  },
+  follow: {
+    element: '.follow'
+  }
+});
+
+mm.init();
+
+</script>
+
+
+</body>
+</html>
